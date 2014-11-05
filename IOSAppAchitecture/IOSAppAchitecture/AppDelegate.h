@@ -7,6 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+
+/**
+ *  AppDelegate包含一个UINavigationController, 集中管理所有ViewCtroller
+ */
 @class RootNavController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>

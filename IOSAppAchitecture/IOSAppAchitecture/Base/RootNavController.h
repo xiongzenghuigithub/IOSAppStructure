@@ -17,7 +17,7 @@
 @interface RootNavController : UINavigationController
 
 /**
- *  所有BaseViewController子类的控制器的push方法都会到 root view controller 的这个方法来
+ *  所有BaseViewController子类的控制器的push方法都是调用RootNavController的这个方法，封装push操作
  */
 - (BaseViewController *)pushWithType:(NSString *)type Animation:(BOOL)isAnimation;
 

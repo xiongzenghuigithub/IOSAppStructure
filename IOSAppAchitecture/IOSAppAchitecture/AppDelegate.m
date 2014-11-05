@@ -17,6 +17,11 @@
 {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    /**
+     *   1. 把RootNavController:(UINavigationController)作为UIWindow的根控制器
+     *   2. 把RootViewController:(BaseViewController:(UIViewController))作为RootNavController的根视图控制器
+     */
     RootViewController * rootVC = [[RootViewController alloc] init];
     _rootNav = [[RootNavController alloc] initWithRootViewController:rootVC];
     self.window.rootViewController = _rootNav;
